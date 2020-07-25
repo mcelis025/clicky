@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Dio Brando",
+    "image": "https://cameronscookware.com/wp-content/uploads/2019/12/dio-wallpaper-jojo-unique-lord-dio-music-mix-for-you-of-dio-wallpaper-jojo.jpg",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "name": "Johnathan Joestar",
+    "image": "https://vignette.wikia.nocookie.net/speedwagon/images/9/9b/51577dd81568bccb1e07dd515aae51c9f0446d3e_00.jpg/revision/latest?cb=20181026185023",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "name": "Joseph Joestar",
+    "image": "https://i.pinimg.com/originals/ab/75/d7/ab75d7ffae5b4494382fb9aa95062d37.png",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "name": "Jotaro Kujo",
+    "image": "https://static.jojowiki.com/images/thumb/6/69/latest/20200315224143/Jotaro_SC_Infobox_Manga.png/270px-Jotaro_SC_Infobox_Manga.png",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "name": "Josuke Higashikata",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51XxujsPGLL._AC_.jpg",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "name": "Muhammad Avdol",
+    "image": "https://wallpapercave.com/wp/wp6482460.jpg",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "name": "Jean Pierre Polnareff",
+    "image": "https://i.redd.it/zmr32g2r3x531.jpg",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "name": "Noriaki Kakyoin",
+    "image": "https://rei.animecharactersdatabase.com/uploads/chars/5688-580471614.jpg",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "name": "Lisa Lisa",
+    "image": "https://i.pinimg.com/originals/e6/ca/71/e6ca71f05049e69d680d94017fd1a5c3.jpg",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "name": "Robert E. O. Speedwagon",
+    "image": "https://vignette.wikia.nocookie.net/speedwagon/images/7/7a/2A7829CD-3902-4CD4-8D95-16C26516E2EB.jpeg/revision/latest?cb=20200525192658",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "name": "Caesar Anthonio Zeppeli",
+    "image": "https://satchiikoma.files.wordpress.com/2013/12/caesar-anthonio-zeppeli.jpg",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "name": "Baron Zeppeli",
+    "image": "https://rei.animecharactersdatabase.com/uploads/chars/5688-1472105538.jpg",
+    "clicked": false
+  }
+]

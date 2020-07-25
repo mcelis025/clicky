@@ -6,12 +6,10 @@ import Cards from "./components/Cards";
 class App extends Component {
 
   state = {
-    cards: [
-      {
-        clicked: false
-      }
-    ]
-  }  
+    score: 0,
+    topScore: 0,
+    message: "Click an image to begin!"
+  };  
 
   render () {
     return (
