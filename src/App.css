@@ -1,0 +1,31 @@
+img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
+
+.cardWidth {
+    width: 30rem;
+}
+
+.footerImg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.navText {
+    font-size: 2rem;
+    color: white;
+}
+
+.jumboImg {
+    background-image: url("https://images.wallpapersden.com/image/download/jojo-s-bizarre-adventure-stardust-crusaders_66379_2560x1080.jpg");
+    width: 100%;
+    background-position-x: center;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.textShadow {
+    text-shadow: 2px 2px black;
+}

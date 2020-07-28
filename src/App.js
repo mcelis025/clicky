@@ -13,14 +13,35 @@ class App extends Component {
     gameCards,
   };
 
+  handleClick = (id) => {
+    // if (this.state.score < 12 && this.gameCards.clicked === false) {
+    //   this.setState({gameCards: }) 
+    // }
+    alert(id);
+  }
+
+  wrong = () => {
+
+  }
+
+  shuffle = () => {
+
+  }
+
   render() {
     return (
       <div className="App">
-        <Navbar />
+        <Navbar 
+        message={this.state.message}
+        score={this.state.score}
+        topScore={this.state.topScore}
+        />
 
         <div className="container">
           <div className="row no-gutters">
-            <Cards gameCards={this.state.gameCards} />
+            <Cards 
+            gameCards={this.state.gameCards} 
+            handleClick={this.handleClick} />
           </div>
         </div>
 
