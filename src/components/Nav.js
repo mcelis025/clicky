@@ -8,7 +8,7 @@ function Navbar(props) {
         <div className="navText text-center">Clicky Game</div>
         <div className="navText text-center">{props.message}</div>
         <div className="navText text-center">
-          Score: {props.score} Highscore: {props.topScore}
+          Score: {props.score} Highscore: {props.highScore}
         </div>
       </nav>
       <div className="jumbotron jumbotron-fluid text-center text-light textShadow jumboImg opacity mt-5">
