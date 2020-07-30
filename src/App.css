@@ -24,6 +24,7 @@ img {
     background-position-x: center;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    filter: grayscale(70%);
 }
 
 .textShadow {
