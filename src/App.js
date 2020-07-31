@@ -14,14 +14,16 @@ class App extends Component {
   };
 
   handleClick = (id) => {
-    if (this.state.score < 12 && gameCards.clicked === false) {
+    let gCard = this.state.gameCards.find((gameCards) => gameCards.id === id)
+    if (gCard.clicked === false && this.state.score < 12) {
+      this.setState({ message: "" })
       this.setState({ clicked: true }) 
-      this.setState({ score: this.score++ })
+      this.setState({ score: this.state.score + 1 })
       this.shuffle();
     } else if (this.state.score === 12) {
         this.setState({ message: "YOU WIN!" })
         this.setState({ score: 0 })
-        this.setState({ topScore: 12 })
+        this.setState({ highScore: 12 })
         this.shuffle();
 
     } else if (gameCards.clicked === true) {
@@ -29,12 +31,17 @@ class App extends Component {
         this.setState({ score: 0 })
         this.shuffle();
     }
-    alert(id);
+    alert(id, gCard.name);
+    
   }
 
   increaseHighScore = () => {
 
   }
+
+  // increaseScore = () => {
+
+  // }
 
   shuffle = () => {
     for (let i=0; i<gameCards.length; i++) {
