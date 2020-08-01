@@ -15,39 +15,59 @@ class App extends Component {
 
   handleClick = (id) => {
     let gCard = this.state.gameCards.find((gameCards) => gameCards.id === id)
-    if (gCard.clicked === false && this.state.score < 12) {
-      this.setState({ message: "" })
-      this.setState({ clicked: true }) 
-      this.setState({ score: this.state.score + 1 })
-      this.shuffle();
-    } else if (this.state.score === 12) {
-        this.setState({ message: "YOU WIN!" })
-        this.setState({ score: 0 })
-        this.setState({ highScore: 12 })
-        this.shuffle();
+    if (gCard.clicked === false && this.state.score < 11) {
 
-    } else if (gameCards.clicked === true) {
-        this.setState({ message: "YOU LOSE!"})
-        this.setState({ score: 0 })
+      this.setState({ message: "" });
+      this.increaseHighScore();
+      this.increaseScore();
+      //this.shuffle();
+      this.removeShake();
+      gCard.clicked = true;
+
+    } else if (gCard.clicked === false && this.state.score === 11) {
+
+        this.setState({ message: "WINNER! WINNER! CHICKEN DINNER!" });
+        this.setState({ score: 0 });
+        this.setState({ highScore: 12 });
         this.shuffle();
+        this.resetCards();
+
+    } else if (gCard.clicked === true) {
+
+        this.setState({ message: "YOU LOSE! TRY AGAIN!"});
+        this.setState({ score: 0 });
+        this.shuffle();
+        this.resetCards();
+        this.shake();
     }
-    alert(id, gCard.name);
-    
+  }
+
+  shake = () => {
+    this.setState({ shake: "shake" });
+  }
+
+  removeShake = () => {
+    this.setState({ shake: "" });
   }
 
   increaseHighScore = () => {
-
+    if (this.state.score > this.state.highScore) {
+      this.setState({ highScore: this.state.score });
+    }
   }
 
-  // increaseScore = () => {
+  resetCards = () => {
+    this.state.gameCards.forEach((gameCards) => (
+      gameCards.clicked = false
+    ));
+  }
 
-  // }
+  increaseScore = () => {
+    this.setState({ score: this.state.score + 1 });
+  }
 
   shuffle = () => {
-    for (let i=0; i<gameCards.length; i++) {
-      let randomCards = Math.floor(Math.random() * gameCards.length);
-      console.log(randomCards);
-    }
+    this.state.gameCards.sort(() => Math.random() - 0.5);
   }
 
   render() {

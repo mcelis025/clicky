@@ -5,7 +5,7 @@ import "../App.css";
 class Footer extends Component {
   render() {
     return (
-      <footer className="footer mt-5 pt-3">
+      <footer className="footer mt-5 pt-3 border-top border-dark ">
         <div className="container-fluid">
           <div className="row no-gutters">
             <div className="col-lg-3">
