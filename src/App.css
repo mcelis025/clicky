@@ -5,7 +5,8 @@ img {
 }
 
 .card {
-    width: 50px;
+    width: 250px;
+    height: 300px;
 }
 
 .navbar {
