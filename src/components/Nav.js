@@ -4,7 +4,7 @@ import "../App.css";
 function Navbar(props) {
   return (
     <div>
-      <nav className="navbar bg-danger fixed-top mb-5">
+      <nav className="navbar fixed-top mb-5">
         <div className="navText text-center">JoJo Clicky Game</div>
         <div className="navText text-center">{props.message}</div>
         <div className="navText text-center">

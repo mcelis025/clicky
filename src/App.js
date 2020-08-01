@@ -60,7 +60,7 @@ class App extends Component {
         />
 
         <div className="container">
-          <div className="row no-gutters">
+          <div className="row">
             <Cards 
             key={this.state.gameCards.id}
             gameCards={this.state.gameCards} 

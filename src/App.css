@@ -4,8 +4,16 @@ img {
     object-fit: cover;
 }
 
-.cardWidth {
-    width: 30rem;
+.card {
+    width: 50px;
+}
+
+.navbar {
+    background-color: #990000;
+}
+
+.footer {
+    background-color: #990000;
 }
 
 .footerImg {
@@ -26,6 +34,17 @@ img {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     filter: grayscale(70%);
 }
+
+.grow { 
+    transition: all .2s ease-in-out;
+}
+.grow:hover { 
+    transform: scale(1.1); 
+    z-index: 1;
+    background-color: #990000;
+}
+
+
 
 .textShadow {
     text-shadow: 2px 2px black;
