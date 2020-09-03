@@ -20,7 +20,7 @@ class App extends Component {
       this.setState({ message: "" });
       this.increaseHighScore();
       this.increaseScore();
-      //this.shuffle();
+      this.shuffle();
       this.removeShake();
       gCard.clicked = true;
 
@@ -51,8 +51,11 @@ class App extends Component {
   }
 
   increaseHighScore = () => {
-    if (this.state.score > this.state.highScore) {
-      this.setState({ highScore: this.state.score });
+    if (this.state.score === 0) {
+      this.setState({ highScore: 1 });
+    }
+    if (this.state.score >= 1) {
+      this.setState({ highScore: this.state.highScore +1 })
     }
   }
 
